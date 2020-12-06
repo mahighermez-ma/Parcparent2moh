@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/reg"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/scriptmtbold"
+            android:text="@string/btnLogin"
+
+            android:textColor="#DDF1F0"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextPhoneLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtPhoneLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_profile"
+                android:ems="10"
+                android:fontFamily="@font/verdana"
+                android:hint="@string/hintPhone"
+                android:padding="5dp"
+                android:textColor="#aeaeae"
+                android:textColorHint="#aeaeae" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextPassLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtPassLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_password"
+                android:ems="10"
+                android:fontFamily="@font/verdana"
+                android:hint="@string/hintPassword"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="#aeaeae"
+                android:textColorHint="#aeaeae" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:text="@string/btnLogin"
+            android:textColor="#aeaeae"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:theme="@style/PrimaryFlatButton" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
